@@ -369,22 +369,22 @@ APP.commitmentAnimationGSAP = () => {
 
    // Масив зображень для заміни
    const images = [
-      '../assets/images/zoom-animation/img-1.png',
-      '../assets/images/zoom-animation/img-2.png',
-      '../assets/images/zoom-animation/img-3.png',
-      '../assets/images/zoom-animation/img-4.png',
-      '../assets/images/zoom-animation/img-5.png',
-      '../assets/images/zoom-animation/img-6.png',
-      '../assets/images/zoom-animation/img-7.png',
-      '../assets/images/zoom-animation/img-8.png',
-      '../assets/images/zoom-animation/img-9.png',
-      '../assets/images/zoom-animation/img-10.png',
-      '../assets/images/zoom-animation/img-11.png',
-      '../assets/images/zoom-animation/img-12.png',
-      '../assets/images/zoom-animation/img-13.png',
-      '../assets/images/zoom-animation/img-14.png',
-      '../assets/images/zoom-animation/img-15.png',
-      '../assets/images/zoom-animation/img-16.png',
+      './assets/images/zoom-animation/img-1.png',
+      './assets/images/zoom-animation/img-2.png',
+      './assets/images/zoom-animation/img-3.png',
+      './assets/images/zoom-animation/img-4.png',
+      './assets/images/zoom-animation/img-5.png',
+      './assets/images/zoom-animation/img-6.png',
+      './assets/images/zoom-animation/img-7.png',
+      './assets/images/zoom-animation/img-8.png',
+      './assets/images/zoom-animation/img-9.png',
+      './assets/images/zoom-animation/img-10.png',
+      './assets/images/zoom-animation/img-11.png',
+      './assets/images/zoom-animation/img-12.png',
+      './assets/images/zoom-animation/img-13.png',
+      './assets/images/zoom-animation/img-14.png',
+      './assets/images/zoom-animation/img-15.png',
+      './assets/images/zoom-animation/img-16.png',
    ]
 
    // Функція ініціалізації початкових властивостей
