@@ -1,0 +1,42 @@
+[
+   {
+      "name": "New York, NY",
+      "address": "15 W 44th St, New York, NY 10036",
+      "coordinates": {
+         "lat": 40.7549,
+         "lng": -73.984
+      }
+   },
+   {
+      "name": "Boston, MA",
+      "address": "1 Congress St, Boston, MA 02114",
+      "coordinates": {
+         "lat": 42.3601,
+         "lng": -71.0589
+      }
+   },
+   {
+      "name": "New Hampton, IA",
+      "address": "112 E Main St, New Hampton, IA 50659",
+      "coordinates": {
+         "lat": 43.056,
+         "lng": -92.1332
+      }
+   },
+   {
+      "name": "Atlanta, GA",
+      "address": "3343 Peachtree Rd NE, Atlanta, GA 30326",
+      "coordinates": {
+         "lat": 33.749,
+         "lng": -84.388
+      }
+   },
+   {
+      "name": "Seattle, WA",
+      "address": "400 Broad St, Seattle, WA 98109",
+      "coordinates": {
+         "lat": 47.6062,
+         "lng": -122.3321
+      }
+   }
+]

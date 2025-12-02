@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Smile for service</title>
+      <meta name="description" content="<blank>" />
+
+      <!-- open graph -->
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Smile for service" />
+      <meta property="og:description" content="<blank>" />
+      <meta property="og:image" content="assets/meta/" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="" />
+
+      <!-- twitter -->
+      <meta name="twitter:title" content="Smile for service" />
+      <meta name="twitter:description" content="<blank>" />
+      <meta name="twitter:image" content="assets/meta/" />
+      <meta name="twitter:card" content="summary_large_image" />
+
+      <!-- favicon -->
+      <link rel="icon" type="img/png" sizes="16x16" href="assets/meta/sm.png" />
+      <link rel="icon" type="img/png" sizes="32x32" href="assets/meta/sm.png" />
+      <link rel="icon" type="img/png" sizes="144x144" href="assets/meta/sm.png" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!-- inter - FONT -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Bebas Neue - FONT -->
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+      <!-- Roboto mono -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <!-- tippy -->
+      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css" />
+
+      <!-- simpleBar -->
+      <!-- <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" /> -->
+
+      <link rel="stylesheet" href="./css/main.css?=1.0.0" />
+   </head>
+
+   <body>
+      <header class="header" data-theme="white">
+         <div class="header__container">
+            <a href="index.html" class="header__container-logo">
+               <svg width="144" height="46" viewBox="0 0 144 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M48.4834 15.4918V14.3969H51.2484V15.7085C51.2484 17.0771 51.8361 17.5675 52.7639 17.5675C53.6918 17.5675 54.2795 17.0771 54.2795 15.6666C54.2795 14.0814 53.6955 13.0701 51.7807 11.348C49.3373 9.1316 48.5388 7.57292 48.5388 5.38697C48.5388 2.37986 50.0544 0.631104 52.897 0.631104C55.7396 0.631104 57.1517 2.37986 57.1517 5.444V6.23474H54.3867V5.23871C54.3867 3.87391 53.8544 3.33788 52.9081 3.33788C51.9618 3.33788 51.448 3.85871 51.448 5.17028C51.448 6.56548 52.0579 7.57672 53.9727 9.29887C56.4198 11.5114 57.1887 13.0435 57.1887 15.4233C57.1887 18.5369 55.6472 20.2894 52.775 20.2894C49.9028 20.2894 48.4834 18.5521 48.4834 15.4918Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M58.3712 0.893433H62.5446L64.3928 14.5794H64.4446L66.2928 0.893433H70.4662V20.031H67.7012V5.53905H67.6458L65.5203 20.031H63.0732L60.9477 5.53905H60.9107V20.031H58.3564L58.3712 0.893433Z"
+                     fill="currentColor"
+                  />
+                  <path d="M72.167 0.893433H75.0909V20.031H72.167V0.893433Z" fill="currentColor" />
+                  <path d="M76.7656 0.893433H79.6895V17.2976H84.495V20.031H76.7656V0.893433Z" fill="currentColor" />
+                  <path
+                     d="M85.4043 0.893433H93.3813V3.61161H88.3282V8.66781H92.3315V11.4012H88.3282V17.2976H93.3813V20.031H85.4043V0.893433Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M48.9902 25.9691H56.727V28.7025H51.9216V34.0248H55.6957V36.7582H51.9142V45.0952H48.9902V25.9691Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M57.418 40.5674V30.5083C57.418 27.4479 58.9853 25.6954 61.8538 25.6954C64.7223 25.6954 66.2896 27.4479 66.2896 30.5083V40.5674C66.2896 43.6316 64.7223 45.3803 61.8538 45.3803C58.9853 45.3803 57.418 43.6316 57.418 40.5674ZM63.3693 40.7613V30.3182C63.3693 28.9496 62.7853 28.4174 61.8538 28.4174C60.9223 28.4174 60.3419 28.9344 60.3419 30.3182V40.7613C60.3419 42.1261 60.9259 42.6622 61.8538 42.6622C62.7816 42.6622 63.3693 42.1261 63.3693 40.7613Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M67.757 25.9691H72.0893C75.1204 25.9691 76.4216 27.4213 76.4216 30.3714V31.5461C76.4216 33.5154 75.8116 34.7737 74.5068 35.3212V35.3744C75.9854 35.8382 76.4474 37.2752 76.4474 39.4194V42.7686C76.394 43.5572 76.5023 44.3486 76.7654 45.0914H73.7897C73.6307 44.601 73.5235 44.3007 73.5235 42.742V39.2407C73.5235 37.4653 73.0208 36.8913 71.6753 36.8913H70.6661V45.0914H67.7422L67.757 25.9691ZM71.7418 34.1731C72.8323 34.1731 73.4976 33.6789 73.4976 32.1506V30.6718C73.4976 29.307 73.0467 28.7025 72.019 28.7025H70.692V34.1731H71.7418Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M81.2051 40.5675V39.4764H83.9701V40.7879C83.9701 42.1565 84.5541 42.647 85.4856 42.647C86.4172 42.647 87.0012 42.1565 87.0012 40.7461C87.0012 39.157 86.4171 38.1458 84.5024 36.4236C82.0553 34.2111 81.2605 32.6524 81.2605 30.4665C81.2605 27.4594 82.7724 25.7068 85.6187 25.7068C88.465 25.7068 89.8697 27.4594 89.8697 30.5197V31.3142H87.1084V30.3296C87.1084 28.961 86.5761 28.4288 85.6298 28.4288C84.6835 28.4288 84.1512 28.9458 84.1512 30.2574C84.1512 31.6526 84.7611 32.6638 86.6759 34.386C89.1193 36.6023 89.8919 38.1306 89.8919 40.5104C89.8919 43.6278 88.3504 45.3765 85.4782 45.3765C82.6061 45.3765 81.2051 43.6316 81.2051 40.5675Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M91.0928 25.9691H99.0661V28.7025H94.0167V33.7625H98.0311V36.4959H94.0167V42.3885H99.0661V45.1218H91.0928V25.9691Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M100.238 25.9691H104.571C107.602 25.9691 108.903 27.4213 108.903 30.3714V31.5461C108.903 33.5154 108.293 34.7737 106.988 35.3212V35.3744C108.467 35.8382 108.929 37.2752 108.929 39.4194V42.7686C108.875 43.5572 108.984 44.3486 109.247 45.0914H106.271C106.112 44.601 106.005 44.3007 106.005 42.742V39.2407C106.005 37.4653 105.498 36.8913 104.157 36.8913H103.162V45.0914H100.238V25.9691ZM104.223 34.1731C105.314 34.1731 105.979 33.6789 105.979 32.1506V30.6718C105.979 29.307 105.528 28.7025 104.5 28.7025H103.162V34.1731H104.223Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M109.568 25.9691H112.526L114.44 40.8146H114.492L116.407 25.9691H119.091L116.274 45.1066H112.392L109.568 25.9691Z"
+                     fill="currentColor"
+                  />
+                  <path d="M119.984 25.9691H122.908V45.1066H119.984V25.9691Z" fill="currentColor" />
+                  <path
+                     d="M124.398 40.6777V30.4133C124.398 27.4632 125.877 25.7106 128.705 25.7106C131.533 25.7106 133.011 27.4632 133.011 30.4133V32.4358H130.246V30.2232C130.246 28.9648 129.662 28.4478 128.768 28.4478C127.873 28.4478 127.308 28.9648 127.308 30.2232V40.9134C127.308 42.1718 127.892 42.6622 128.768 42.6622C129.644 42.6622 130.246 42.1718 130.246 40.9134V37.9862H133.011V40.6929C133.011 43.6468 131.533 45.3956 128.705 45.3956C125.877 45.3956 124.398 43.6316 124.398 40.6777Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M134.261 25.9691H142.234V28.7025H137.185V33.7625H141.199V36.4959H137.185V42.3885H142.234V45.1218H134.261V25.9691Z"
+                     fill="currentColor"
+                  />
+                  <path
+                     d="M25.2763 26.8359C33.9409 26.8359 42.9788 20.2514 42.9788 11.2149C42.9788 7.33719 40.9679 0.885786 30.9282 0.627273C29.409 0.589257 26.1228 0.984628 26.1006 1.11388C28.6586 2.50149 32.6841 8.5043 33.4382 13.1499C30.9282 8.11653 25.0249 0.75653 15.2366 0.627273C5.68852 0.501819 1.6963 4.22744 1.76653 11.4316C1.98463 33.0364 18.8739 44.7911 22.2636 44.9089C25.9047 45.0382 37.5782 36.0017 38.5837 29.805C34.4399 33.0326 30.9319 34.3669 26.9101 34.8383C17.1773 35.9979 13.0926 28.7557 12.9743 28.5124C15.5323 30.5805 21.0105 34.9752 31.4273 29.1587C23.3948 31.8693 11.3442 29.4172 8.7714 19.3086C9.88035 20.3617 11.4772 21.9698 12.7969 22.8631C15.1959 24.5207 18.2455 26.8359 25.2763 26.8359ZM5.96207 23C6.0592 21.3154 6.26294 19.6392 6.57199 17.9818C6.68288 17.4838 6.80856 16.982 6.94164 16.4954C6.60526 16.3357 4.46128 15.545 3.61479 15.2218C4.82724 13.5871 8.38697 12.6709 8.38697 12.6709C9.01389 11.0763 9.84158 9.57323 10.8488 8.20017C11.3479 7.51207 12.8376 5.80512 12.8376 5.80512L14.342 10.6256C13.0011 11.9704 11.7628 13.4193 10.6381 14.9595C11.5841 14.2063 12.5907 13.5373 13.6471 12.9598C15.6173 11.9144 19.0957 10.8385 20.5115 11.059C20.4302 11.2453 18.0792 14.796 16.9813 16.3813C16.7226 16.7615 17.5099 20.4529 17.8463 21.8861C17.887 22.0724 14.0278 20.5517 12.065 19.2934C12.5012 17.0428 14.0352 15.4651 16.4823 13.7582C12.0916 15.5802 8.39827 18.8248 5.96207 23Z"
+                     fill="#3A84BA"
+                  />
+               </svg>
+            </a>
+            <nav class="header__container-navigation">
+               <ul class="header-handlers">
+                  <!-- add class active -->
+                  <li><a class="handler" href="/about.html">About us</a></li>
+                  <li><a class="handler" href="/who-we-serve.html">Who we serve</a></li>
+                  <li><a class="handler" href="/our-impact.html">Our impact</a></li>
+                  <li><a class="handler" href="/ways-to-help.html">How to help</a></li>
+                  <button class="handler" data-open-resource-menu>Resources</button>
+                  <li><a class="handler" href="/packages.html">Packages</a></li>
+                  <li><a class="handler" href="/contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="header__container-buttons">
+               <!-- prettier-ignore -->
+               <!-- prettier-ignore -->
+
+               <a 
+        href="https://example.com/donate" 
+        target="_blank" 
+        class='
+            ui-border-btn 
+             
+            header-border-link'
+    >
+        Donate now
+    </a>
+
+               <!-- prettier-ignore -->
+               <!-- prettier-ignore -->
+
+               <a 
+        href="https://example.com/get-care" 
+        target="_blank" 
+        class='
+            ui-solid-btn 
+             
+            header-solid-link'
+    >
+        <div class="ui-solid-btn__text">Get care</div>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 8.00003L9.44998 3.76357C9.36023 3.68001 9.25368 3.61372 9.13642 3.5685C9.01916 3.52328 8.89348 3.5 8.76655 3.5C8.63963 3.5 8.51395 3.52328 8.39669 3.5685C8.27943 3.61372 8.17288 3.68001 8.08313 3.76357C7.99338 3.84714 7.92219 3.94634 7.87362 4.05552C7.82505 4.1647 7.80005 4.28172 7.80005 4.3999C7.80005 4.51807 7.82505 4.63509 7.87362 4.74427C7.92219 4.85345 7.99338 4.95266 8.08313 5.03622L10.2997 7.1L2.96665 7.1C2.71028 7.1 2.46441 7.19482 2.28312 7.36361C2.10184 7.5324 2 7.76132 2 8.00003C2 8.23873 2.10184 8.46766 2.28312 8.63645C2.46441 8.80524 2.71028 8.90006 2.96665 8.90006L10.2997 8.90006L8.08313 10.9638C7.99305 11.0472 7.92157 11.1464 7.87279 11.2556C7.82401 11.3648 7.7989 11.4819 7.7989 11.6002C7.7989 11.7184 7.82401 11.8355 7.87279 11.9447C7.92157 12.0539 7.99305 12.1531 8.08313 12.2365C8.26441 12.4052 8.51023 12.5 8.76655 12.5C9.02287 12.5 9.2687 12.4052 9.44997 12.2365L14 8.00003Z" fill="currentColor"/>
+</svg>
+
+    </a>
+
+               <button class="mobile-open-navigation-menu">
+                  <div class="layout">
+                     <!-- prettier-ignore -->
+                     <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 9.5H15M1 6.5H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M3.49994 2.08594L7.99994 6.58594L12.4999 2.08594L13.9139 3.49994L9.41394 7.99994L13.9139 12.4999L12.4999 13.9139L7.99994 9.41394L3.49994 13.9139L2.08594 12.4999L6.58594 7.99994L2.08594 3.49994L3.49994 2.08594Z"
+                           fill="currentColor"
+                        />
+                     </svg>
+                  </div>
+               </button>
+            </div>
+         </div>
+         <div class="mobile-navigation-menu" style="display: none; width: 0">
+            <div class="mobile-navigation-menu__container" style="transform: translateX(100%)">
+               <div class="content">
+                  <a href="/about.html" class="action link-name">About us</a>
+                  <a href="/who-we-serve.html" class="action link-name">Who we serve</a>
+                  <a href="/our-impact.html" class="action link-name">Our impact</a>
+                  <a href="/ways-to-help.html" class="action link-name">How to help</a>
+                  <div class="dropdown action">
+                     <button class="dropdown__header">
+                        <div class="title link-name">Resources</div>
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M3 5.5L8 10.5L13 5.5"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </button>
+                     <div class="dropdown__body" style="display: none">
+                        <a href="/blog.html" class="item">
+                           <div class="icon">
+                              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M11.6665 14.6663V2.33301C11.6665 2.06779 11.5611 1.81344 11.3736 1.6259C11.1861 1.43836 10.9317 1.33301 10.6665 1.33301H2.6665C2.40129 1.33301 2.14693 1.43836 1.9594 1.6259C1.77186 1.81344 1.6665 2.06779 1.6665 2.33301V13.6663C1.6665 13.9316 1.77186 14.1859 1.9594 14.3734C2.14693 14.561 2.40129 14.6663 2.6665 14.6663H11.6665ZM11.6665 14.6663H13.3332C13.5984 14.6663 13.8527 14.561 14.0403 14.3734C14.2278 14.1859 14.3332 13.9316 14.3332 13.6663V7.99967C14.3332 7.82286 14.2629 7.65329 14.1379 7.52827C14.0129 7.40325 13.8433 7.33301 13.6665 7.33301H12.3332C12.1564 7.33301 11.9868 7.40325 11.8618 7.52827C11.7367 7.65329 11.6665 7.82286 11.6665 7.99967V14.6663Z"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                 />
+                                 <path
+                                    d="M3.6665 4H6.33317M3.6665 6.33333H7.6665"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                              </svg>
+                           </div>
+                           <div class="text">
+                              <h4>Blog</h4>
+                              <p>Fresh stories, expert insights, and real experiences.</p>
+                           </div>
+                        </a>
+                        <a href="/resources.html" class="item">
+                           <div class="icon">
+                              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M10.5 5.5H11.75C12.0815 5.5 12.3995 5.6317 12.6339 5.86612C12.8683 6.10054 13 6.41848 13 6.75V13.25C13 13.5815 12.8683 13.8995 12.6339 14.1339C12.3995 14.3683 12.0815 14.5 11.75 14.5H4.25C3.91848 14.5 3.60054 14.3683 3.36612 14.1339C3.1317 13.8995 3 13.5815 3 13.25V6.75C3 6.41848 3.1317 6.10054 3.36612 5.86612C3.60054 5.6317 3.91848 5.5 4.25 5.5H5.5"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                                 <path
+                                    d="M5.5 8.5L8 11L10.5 8.5M8 1.5V10.5"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                              </svg>
+                           </div>
+                           <div class="text">
+                              <h4>Resources</h4>
+                              <p>Guides for patients and dental professionals.</p>
+                           </div>
+                        </a>
+                        <a href="/reports.html" class="item">
+                           <div class="icon">
+                              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M9.42871 1.57129V4.42843C9.42871 4.61787 9.50397 4.79955 9.63792 4.93351C9.77188 5.06746 9.95356 5.14272 10.143 5.14272H13.0001"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                                 <path
+                                    d="M11.5714 14.4284H4.42857C4.04969 14.4284 3.68633 14.2779 3.41842 14.01C3.15051 13.7421 3 13.3787 3 12.9999V2.99986C3 2.62098 3.15051 2.25762 3.41842 1.98971C3.68633 1.7218 4.04969 1.57129 4.42857 1.57129H9.42857L13 5.14272V12.9999C13 13.3787 12.8495 13.7421 12.5816 14.01C12.3137 14.2779 11.9503 14.4284 11.5714 14.4284Z"
+                                    stroke="#153A59"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                              </svg>
+                           </div>
+                           <div class="text">
+                              <h4>Reports & Policies</h4>
+                              <p>Key reports, documents, and policies.</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <a href="@@links.header." class="action link-name">Packages</a>
+                  <a href="@@links.header." class="action link-name">Contact</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="resource-menu" style="display: none">
+            <div class="resource-menu__container" style="display: none">
+               <a href="/blog.html" class="card">
+                  <div class="content">
+                     <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M11.6665 14.6663V2.33301C11.6665 2.06779 11.5611 1.81344 11.3736 1.6259C11.1861 1.43836 10.9317 1.33301 10.6665 1.33301H2.6665C2.40129 1.33301 2.14693 1.43836 1.9594 1.6259C1.77186 1.81344 1.6665 2.06779 1.6665 2.33301V13.6663C1.6665 13.9316 1.77186 14.1859 1.9594 14.3734C2.14693 14.561 2.40129 14.6663 2.6665 14.6663H11.6665ZM11.6665 14.6663H13.3332C13.5984 14.6663 13.8527 14.561 14.0403 14.3734C14.2278 14.1859 14.3332 13.9316 14.3332 13.6663V7.99967C14.3332 7.82286 14.2629 7.65329 14.1379 7.52827C14.0129 7.40325 13.8433 7.33301 13.6665 7.33301H12.3332C12.1564 7.33301 11.9868 7.40325 11.8618 7.52827C11.7367 7.65329 11.6665 7.82286 11.6665 7.99967V14.6663Z"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M3.6665 4H6.33317M3.6665 6.33333H7.6665"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+
+                     <h4>Blog</h4>
+                     <p>Fresh stories, expert insights, and real experiences.</p>
+                  </div>
+
+                  <div class="learn-more">Learn more</div>
+               </a>
+               <a href="/resources.html" class="card">
+                  <div class="content">
+                     <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M10.5 5.5H11.75C12.0815 5.5 12.3995 5.6317 12.6339 5.86612C12.8683 6.10054 13 6.41848 13 6.75V13.25C13 13.5815 12.8683 13.8995 12.6339 14.1339C12.3995 14.3683 12.0815 14.5 11.75 14.5H4.25C3.91848 14.5 3.60054 14.3683 3.36612 14.1339C3.1317 13.8995 3 13.5815 3 13.25V6.75C3 6.41848 3.1317 6.10054 3.36612 5.86612C3.60054 5.6317 3.91848 5.5 4.25 5.5H5.5"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M5.5 8.5L8 11L10.5 8.5M8 1.5V10.5"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+
+                     <h4>Resources</h4>
+                     <p>Guides for patients and dental professionals.</p>
+                  </div>
+
+                  <div class="learn-more">Learn more</div>
+               </a>
+               <a href="/reports.html" class="card">
+                  <div class="content">
+                     <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M9.42871 1.57129V4.42843C9.42871 4.61787 9.50397 4.79955 9.63792 4.93351C9.77188 5.06746 9.95356 5.14272 10.143 5.14272H13.0001"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M11.5714 14.4284H4.42857C4.04969 14.4284 3.68633 14.2779 3.41842 14.01C3.15051 13.7421 3 13.3787 3 12.9999V2.99986C3 2.62098 3.15051 2.25762 3.41842 1.98971C3.68633 1.7218 4.04969 1.57129 4.42857 1.57129H9.42857L13 5.14272V12.9999C13 13.3787 12.8495 13.7421 12.5816 14.01C12.3137 14.2779 11.9503 14.4284 11.5714 14.4284Z"
+                           stroke="#153A59"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+
+                     <h4>Reports & Policies</h4>
+                     <p>Key reports, documents, and policies.</p>
+                  </div>
+
+                  <div class="learn-more">Learn more</div>
+               </a>
+            </div>
+         </div>
+      </header>
+      <main>
+         <!-- prettier-ignore -->
+         <section class="vaterans-intake-form">
+   <form class="vaterans-intake-form__container">
+      <div class="title">
+         <h1>Partnership application</h1>
+      </div>
+
+      <div class="fields">
+         <!-- prettier-ignore -->
+         <!-- add class error into ui-input, for show error style  -->
+<label class="ui-input--container">
+    <div class="ui-input__name">Full Name*</div>
+    <input type="text"
+        class="ui-input--node" 
+        placeholder="Enter your name"
+        
+            data-input-type="text"
+        
+    >
+    <div class="ui-input-error">
+        <p>Error *</p>
+        <p>Error *</p>
+        <p>Error *</p>
+    </div>
+</label>
+
+
+         <div class="grid">
+            <!-- prettier-ignore -->
+            <!-- add class error into ui-input, for show error style  -->
+<label class="ui-input--container">
+    <div class="ui-input__name">Email*</div>
+    <input type="text"
+        class="ui-input--node" 
+        placeholder="Enter your email address"
+        
+            data-input-type="email"
+        
+    >
+    <div class="ui-input-error">
+        <p>Error *</p>
+        <p>Error *</p>
+        <p>Error *</p>
+    </div>
+</label>
+
+            
+            <div class="ui-input-phone">
+    <div class="ui-input-phone__name">Phone*</div>
+    <input type="text" data-intl-tel id="phone">
+    <div class="ui-input-phone-error">
+        <p>Error *</p>
+    </div>
+</div>
+
+         </div>
+
+         <!-- prettier-ignore -->
+         <!-- add class error into ui-dropdown (<div class="ui-dropdown error">) -->
+<div class="ui-dropdown">
+    
+        <div class='label'>Role*</div>
+    
+    <input type="text" class='' readonly 
+    > 
+    <button class='ui-dropdown-button' type="button">
+        <div class="
+           text 
+           empty" 
+           >
+            
+           Choose your role
+            
+        </div>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </button>
+
+    <div class="ui-dropdown__popup" style="display: none;">
+        
+            
+               <button class='set-dropdown-value' type="button">
+                   <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.7592 5.35747C13.9155 5.2064 14.0019 5.00406 14 4.79404C13.998 4.58402 13.9078 4.38312 13.7488 4.23461C13.5897 4.0861 13.3746 4.00186 13.1497 4.00003C12.9248 3.99821 12.7081 4.07894 12.5463 4.22485L6.28442 10.0722L3.45371 7.42886C3.29193 7.28295 3.07525 7.20221 2.85034 7.20403C2.62543 7.20586 2.41028 7.2901 2.25124 7.43861C2.0922 7.58713 2.00199 7.78803 2.00003 7.99805C1.99808 8.20807 2.08454 8.4104 2.24079 8.56147L5.67196 11.7655C5.83282 11.9156 6.05096 12 6.27841 12C6.50587 12 6.72401 11.9156 6.88487 11.7655L13.7472 5.35747H13.7592Z" fill="#153A59"/>
+</svg>
+
+                   <div class="text">Admin</div>
+               </button>  
+            
+               <button class='set-dropdown-value' type="button">
+                   <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.7592 5.35747C13.9155 5.2064 14.0019 5.00406 14 4.79404C13.998 4.58402 13.9078 4.38312 13.7488 4.23461C13.5897 4.0861 13.3746 4.00186 13.1497 4.00003C12.9248 3.99821 12.7081 4.07894 12.5463 4.22485L6.28442 10.0722L3.45371 7.42886C3.29193 7.28295 3.07525 7.20221 2.85034 7.20403C2.62543 7.20586 2.41028 7.2901 2.25124 7.43861C2.0922 7.58713 2.00199 7.78803 2.00003 7.99805C1.99808 8.20807 2.08454 8.4104 2.24079 8.56147L5.67196 11.7655C5.83282 11.9156 6.05096 12 6.27841 12C6.50587 12 6.72401 11.9156 6.88487 11.7655L13.7472 5.35747H13.7592Z" fill="#153A59"/>
+</svg>
+
+                   <div class="text">volunteer</div>
+               </button>  
+            
+               <button class='set-dropdown-value' type="button">
+                   <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.7592 5.35747C13.9155 5.2064 14.0019 5.00406 14 4.79404C13.998 4.58402 13.9078 4.38312 13.7488 4.23461C13.5897 4.0861 13.3746 4.00186 13.1497 4.00003C12.9248 3.99821 12.7081 4.07894 12.5463 4.22485L6.28442 10.0722L3.45371 7.42886C3.29193 7.28295 3.07525 7.20221 2.85034 7.20403C2.62543 7.20586 2.41028 7.2901 2.25124 7.43861C2.0922 7.58713 2.00199 7.78803 2.00003 7.99805C1.99808 8.20807 2.08454 8.4104 2.24079 8.56147L5.67196 11.7655C5.83282 11.9156 6.05096 12 6.27841 12C6.50587 12 6.72401 11.9156 6.88487 11.7655L13.7472 5.35747H13.7592Z" fill="#153A59"/>
+</svg>
+
+                   <div class="text">veteran</div>
+               </button>  
+           
+        
+    </div>
+    
+</div>
+
+
+         <div class="ui-drag-and-drop">
+    <div class="ui-drag-and-drop__text">Proof of Service Upload</div>
+    <div class="ui-drag-and-drop__content" id="dropArea">
+
+
+        <input type="file" class='hidden' id="initialFileInput" accept=".pdf, .jpg, .png">
+        <div class="title">
+            <h3>Drag & drop Proof of service upload</h3>
+            <p>Supported formates: PDF, JPG, PNG</p>
+        </div>
+
+        <button class='browse-files' id="openFileManager" type="button">Browse file</button>
+        <div class="files__container" id="filesContainer">
+        </div>
+    </div>
+</div>
+
+
+         <!-- add class error into ui-input, for show error style  -->
+<label class="ui-input--container">
+    <div class="ui-input__name">Reason for applying</div>
+    <input type="text"
+        class="ui-input--node" 
+        placeholder="Why do you want to volunteer?"
+        
+            data-input-type=""
+        
+    >
+    <div class="ui-input-error">
+        <p>Error *</p>
+        <p>Error *</p>
+        <p>Error *</p>
+    </div>
+</label>
+
+      </div>
+
+      <div class="submit__container">
+         <p>
+            By clicking the Submit button, you consent to the processing of your personal data in accordance with our
+            <a href="">Privacy Policy</a>
+            and accept the
+            <a href="">Terms and Conditions</a>
+            .
+         </p>
+         <!-- prettier-ignore -->
+         <!-- prettier-ignore -->
+
+
+    <button 
+        class='
+            ui-solid-btn 
+            ui-solid-btn-large 
+            submit-solid-link'
+        >
+        <div class="ui-solid-btn__text">Submit Application</div>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 8.00003L9.44998 3.76357C9.36023 3.68001 9.25368 3.61372 9.13642 3.5685C9.01916 3.52328 8.89348 3.5 8.76655 3.5C8.63963 3.5 8.51395 3.52328 8.39669 3.5685C8.27943 3.61372 8.17288 3.68001 8.08313 3.76357C7.99338 3.84714 7.92219 3.94634 7.87362 4.05552C7.82505 4.1647 7.80005 4.28172 7.80005 4.3999C7.80005 4.51807 7.82505 4.63509 7.87362 4.74427C7.92219 4.85345 7.99338 4.95266 8.08313 5.03622L10.2997 7.1L2.96665 7.1C2.71028 7.1 2.46441 7.19482 2.28312 7.36361C2.10184 7.5324 2 7.76132 2 8.00003C2 8.23873 2.10184 8.46766 2.28312 8.63645C2.46441 8.80524 2.71028 8.90006 2.96665 8.90006L10.2997 8.90006L8.08313 10.9638C7.99305 11.0472 7.92157 11.1464 7.87279 11.2556C7.82401 11.3648 7.7989 11.4819 7.7989 11.6002C7.7989 11.7184 7.82401 11.8355 7.87279 11.9447C7.92157 12.0539 7.99305 12.1531 8.08313 12.2365C8.26441 12.4052 8.51023 12.5 8.76655 12.5C9.02287 12.5 9.2687 12.4052 9.44997 12.2365L14 8.00003Z" fill="currentColor"/>
+</svg>
+
+    </button>
+
+      </div>
+   </form>
+</section>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__grid">
+            <div class="actions">
+               <h2>Stay smiling.</h2>
+               <p>Because every healthy smile starts with care</p>
+
+               <div class="actions__btns">
+                  <div class="links">
+                     <!-- prettier-ignore -->
+                     <!-- prettier-ignore -->
+
+                     <a 
+        href="@GetCare" 
+        target="_blank" 
+        class='
+            ui-solid-btn 
+            ui-solid-btn-large 
+            footer-solid-link'
+    >
+        <div class="ui-solid-btn__text">Get care</div>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 8.00003L9.44998 3.76357C9.36023 3.68001 9.25368 3.61372 9.13642 3.5685C9.01916 3.52328 8.89348 3.5 8.76655 3.5C8.63963 3.5 8.51395 3.52328 8.39669 3.5685C8.27943 3.61372 8.17288 3.68001 8.08313 3.76357C7.99338 3.84714 7.92219 3.94634 7.87362 4.05552C7.82505 4.1647 7.80005 4.28172 7.80005 4.3999C7.80005 4.51807 7.82505 4.63509 7.87362 4.74427C7.92219 4.85345 7.99338 4.95266 8.08313 5.03622L10.2997 7.1L2.96665 7.1C2.71028 7.1 2.46441 7.19482 2.28312 7.36361C2.10184 7.5324 2 7.76132 2 8.00003C2 8.23873 2.10184 8.46766 2.28312 8.63645C2.46441 8.80524 2.71028 8.90006 2.96665 8.90006L10.2997 8.90006L8.08313 10.9638C7.99305 11.0472 7.92157 11.1464 7.87279 11.2556C7.82401 11.3648 7.7989 11.4819 7.7989 11.6002C7.7989 11.7184 7.82401 11.8355 7.87279 11.9447C7.92157 12.0539 7.99305 12.1531 8.08313 12.2365C8.26441 12.4052 8.51023 12.5 8.76655 12.5C9.02287 12.5 9.2687 12.4052 9.44997 12.2365L14 8.00003Z" fill="currentColor"/>
+</svg>
+
+    </a>
+
+                     <!-- prettier-ignore -->
+                     <!-- prettier-ignore -->
+
+                     <a 
+        href="@Donate" 
+        target="_blank" 
+        class='
+            ui-border-btn 
+            ui-border-btn-large 
+            footer-border-link'
+    >
+        Donate now
+    </a>
+                  </div>
+
+                  <div class="or">or</div>
+                  <a href="@volunteer" class="volunteer">Volunteer</a>
+               </div>
+            </div>
+            <div class="site-map">
+               <nav>
+                  <ul class="links-list">
+                     <li><a href="/about.html" class="footer-item">About us</a></li>
+                     <li><a href="/who-we-serve.html" class="footer-item">Who we serve</a></li>
+                     <li><a href="/our-impact.html" class="footer-item">Our impact</a></li>
+                     <li><a href="/ways-to-help.html" class="footer-item">How to help</a></li>
+
+                     <li>
+                        <button class="footer-item with-dropdown">
+                           <div class="text">Resources</div>
+                           <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M3 5.5L8 10.5L13 5.5"
+                                 stroke="currentColor"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              />
+                           </svg>
+                        </button>
+                        <div class="footer-item__dropdown-body" style="display: none">
+                           <a href="/blog.html">Blog</a>
+                           <a href="/resources.html">Resources</a>
+                           <a href="/reports.html">Reports & Policies</a>
+                        </div>
+                     </li>
+                     <li><a href="@@links.header.resources" class="footer-item">Resources</a></li>
+                     <li><a href="/contact.html" class="footer-item">Contact</a></li>
+                  </ul>
+               </nav>
+               <div class="soccials">
+                  <ul class="soccials__list">
+                     <li><a href="@soccials.inst">Instagram</a></li>
+                     <li><a href="@soccials.facebook">Facebook</a></li>
+                     <li><a href="@soccials.linkedin">LinkendIn</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__logo">
+            <div class="footer__logo-container">
+               <a href="@@links.header.index">
+                  <svg width="144" height="46" viewBox="0 0 144 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M48.4834 15.4918V14.3969H51.2484V15.7085C51.2484 17.0771 51.8361 17.5675 52.7639 17.5675C53.6918 17.5675 54.2795 17.0771 54.2795 15.6666C54.2795 14.0814 53.6955 13.0701 51.7807 11.348C49.3373 9.1316 48.5388 7.57292 48.5388 5.38697C48.5388 2.37986 50.0544 0.631104 52.897 0.631104C55.7396 0.631104 57.1517 2.37986 57.1517 5.444V6.23474H54.3867V5.23871C54.3867 3.87391 53.8544 3.33788 52.9081 3.33788C51.9618 3.33788 51.448 3.85871 51.448 5.17028C51.448 6.56548 52.0579 7.57672 53.9727 9.29887C56.4198 11.5114 57.1887 13.0435 57.1887 15.4233C57.1887 18.5369 55.6472 20.2894 52.775 20.2894C49.9028 20.2894 48.4834 18.5521 48.4834 15.4918Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M58.3712 0.893433H62.5446L64.3928 14.5794H64.4446L66.2928 0.893433H70.4662V20.031H67.7012V5.53905H67.6458L65.5203 20.031H63.0732L60.9477 5.53905H60.9107V20.031H58.3564L58.3712 0.893433Z"
+                        fill="currentColor"
+                     />
+                     <path d="M72.167 0.893433H75.0909V20.031H72.167V0.893433Z" fill="currentColor" />
+                     <path d="M76.7656 0.893433H79.6895V17.2976H84.495V20.031H76.7656V0.893433Z" fill="currentColor" />
+                     <path
+                        d="M85.4043 0.893433H93.3813V3.61161H88.3282V8.66781H92.3315V11.4012H88.3282V17.2976H93.3813V20.031H85.4043V0.893433Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M48.9902 25.9691H56.727V28.7025H51.9216V34.0248H55.6957V36.7582H51.9142V45.0952H48.9902V25.9691Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M57.418 40.5674V30.5083C57.418 27.4479 58.9853 25.6954 61.8538 25.6954C64.7223 25.6954 66.2896 27.4479 66.2896 30.5083V40.5674C66.2896 43.6316 64.7223 45.3803 61.8538 45.3803C58.9853 45.3803 57.418 43.6316 57.418 40.5674ZM63.3693 40.7613V30.3182C63.3693 28.9496 62.7853 28.4174 61.8538 28.4174C60.9223 28.4174 60.3419 28.9344 60.3419 30.3182V40.7613C60.3419 42.1261 60.9259 42.6622 61.8538 42.6622C62.7816 42.6622 63.3693 42.1261 63.3693 40.7613Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M67.757 25.9691H72.0893C75.1204 25.9691 76.4216 27.4213 76.4216 30.3714V31.5461C76.4216 33.5154 75.8116 34.7737 74.5068 35.3212V35.3744C75.9854 35.8382 76.4474 37.2752 76.4474 39.4194V42.7686C76.394 43.5572 76.5023 44.3486 76.7654 45.0914H73.7897C73.6307 44.601 73.5235 44.3007 73.5235 42.742V39.2407C73.5235 37.4653 73.0208 36.8913 71.6753 36.8913H70.6661V45.0914H67.7422L67.757 25.9691ZM71.7418 34.1731C72.8323 34.1731 73.4976 33.6789 73.4976 32.1506V30.6718C73.4976 29.307 73.0467 28.7025 72.019 28.7025H70.692V34.1731H71.7418Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M81.2051 40.5675V39.4764H83.9701V40.7879C83.9701 42.1565 84.5541 42.647 85.4856 42.647C86.4172 42.647 87.0012 42.1565 87.0012 40.7461C87.0012 39.157 86.4171 38.1458 84.5024 36.4236C82.0553 34.2111 81.2605 32.6524 81.2605 30.4665C81.2605 27.4594 82.7724 25.7068 85.6187 25.7068C88.465 25.7068 89.8697 27.4594 89.8697 30.5197V31.3142H87.1084V30.3296C87.1084 28.961 86.5761 28.4288 85.6298 28.4288C84.6835 28.4288 84.1512 28.9458 84.1512 30.2574C84.1512 31.6526 84.7611 32.6638 86.6759 34.386C89.1193 36.6023 89.8919 38.1306 89.8919 40.5104C89.8919 43.6278 88.3504 45.3765 85.4782 45.3765C82.6061 45.3765 81.2051 43.6316 81.2051 40.5675Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M91.0928 25.9691H99.0661V28.7025H94.0167V33.7625H98.0311V36.4959H94.0167V42.3885H99.0661V45.1218H91.0928V25.9691Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M100.238 25.9691H104.571C107.602 25.9691 108.903 27.4213 108.903 30.3714V31.5461C108.903 33.5154 108.293 34.7737 106.988 35.3212V35.3744C108.467 35.8382 108.929 37.2752 108.929 39.4194V42.7686C108.875 43.5572 108.984 44.3486 109.247 45.0914H106.271C106.112 44.601 106.005 44.3007 106.005 42.742V39.2407C106.005 37.4653 105.498 36.8913 104.157 36.8913H103.162V45.0914H100.238V25.9691ZM104.223 34.1731C105.314 34.1731 105.979 33.6789 105.979 32.1506V30.6718C105.979 29.307 105.528 28.7025 104.5 28.7025H103.162V34.1731H104.223Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M109.568 25.9691H112.526L114.44 40.8146H114.492L116.407 25.9691H119.091L116.274 45.1066H112.392L109.568 25.9691Z"
+                        fill="currentColor"
+                     />
+                     <path d="M119.984 25.9691H122.908V45.1066H119.984V25.9691Z" fill="currentColor" />
+                     <path
+                        d="M124.398 40.6777V30.4133C124.398 27.4632 125.877 25.7106 128.705 25.7106C131.533 25.7106 133.011 27.4632 133.011 30.4133V32.4358H130.246V30.2232C130.246 28.9648 129.662 28.4478 128.768 28.4478C127.873 28.4478 127.308 28.9648 127.308 30.2232V40.9134C127.308 42.1718 127.892 42.6622 128.768 42.6622C129.644 42.6622 130.246 42.1718 130.246 40.9134V37.9862H133.011V40.6929C133.011 43.6468 131.533 45.3956 128.705 45.3956C125.877 45.3956 124.398 43.6316 124.398 40.6777Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M134.261 25.9691H142.234V28.7025H137.185V33.7625H141.199V36.4959H137.185V42.3885H142.234V45.1218H134.261V25.9691Z"
+                        fill="currentColor"
+                     />
+                     <path
+                        d="M25.2763 26.8359C33.9409 26.8359 42.9788 20.2514 42.9788 11.2149C42.9788 7.33719 40.9679 0.885786 30.9282 0.627273C29.409 0.589257 26.1228 0.984628 26.1006 1.11388C28.6586 2.50149 32.6841 8.5043 33.4382 13.1499C30.9282 8.11653 25.0249 0.75653 15.2366 0.627273C5.68852 0.501819 1.6963 4.22744 1.76653 11.4316C1.98463 33.0364 18.8739 44.7911 22.2636 44.9089C25.9047 45.0382 37.5782 36.0017 38.5837 29.805C34.4399 33.0326 30.9319 34.3669 26.9101 34.8383C17.1773 35.9979 13.0926 28.7557 12.9743 28.5124C15.5323 30.5805 21.0105 34.9752 31.4273 29.1587C23.3948 31.8693 11.3442 29.4172 8.7714 19.3086C9.88035 20.3617 11.4772 21.9698 12.7969 22.8631C15.1959 24.5207 18.2455 26.8359 25.2763 26.8359ZM5.96207 23C6.0592 21.3154 6.26294 19.6392 6.57199 17.9818C6.68288 17.4838 6.80856 16.982 6.94164 16.4954C6.60526 16.3357 4.46128 15.545 3.61479 15.2218C4.82724 13.5871 8.38697 12.6709 8.38697 12.6709C9.01389 11.0763 9.84158 9.57323 10.8488 8.20017C11.3479 7.51207 12.8376 5.80512 12.8376 5.80512L14.342 10.6256C13.0011 11.9704 11.7628 13.4193 10.6381 14.9595C11.5841 14.2063 12.5907 13.5373 13.6471 12.9598C15.6173 11.9144 19.0957 10.8385 20.5115 11.059C20.4302 11.2453 18.0792 14.796 16.9813 16.3813C16.7226 16.7615 17.5099 20.4529 17.8463 21.8861C17.887 22.0724 14.0278 20.5517 12.065 19.2934C12.5012 17.0428 14.0352 15.4651 16.4823 13.7582C12.0916 15.5802 8.39827 18.8248 5.96207 23Z"
+                        fill="#3A84BA"
+                     />
+                  </svg>
+               </a>
+            </div>
+         </div>
+
+         <div class="footer__copy">
+            <div class="footer__copy__container">
+               <div class="text"><p>Smiles for Service © 2025 — A 501(c)(3) nonprofit dental initiative.</p></div>
+               <div class="links">
+                  <a href="#Privacy Policy">Privacy Policy</a>
+                  <a href="#Nonprofit Status">Nonprofit Status</a>
+                  <a href="#Governance">Governance</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__dev-only">
+            <div class="message">
+               <p>this section is for testing purposes only, to make it convenient to navigate to the form page</p>
+            </div>
+            <a href="/veterans-intake-form.html">Veterans intake form</a>
+            <a href="/partnership-aplication.html">Partnership application</a>
+         </div>
+      </footer>
+      <!-- jquery -->
+      <script
+         src="https://code.jquery.com/jquery-3.7.1.min.js"
+         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- JQuery InputMask -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+
+      <!-- gsap -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+      <!-- tippy -->
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+
+      <!-- JS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css" />
+
+      <!-- phone mask -->
+      <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+
+      <!-- Simple Bar -->
+      <!-- <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
+
+      <script>
+         function initGoogleMap() {
+            APP.map.init()
+         }
+      </script>
+      <!-- google map -->
+      <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyacibNDB9FkDUsa1DckkkNey87u-bqJg&callback=initGoogleMap"
+         async
+         defer
+      ></script>
+
+      <!-- main-js -->
+      <script src="./js/index.js?=1.0.0"></script>
+   </body>
+</html>
