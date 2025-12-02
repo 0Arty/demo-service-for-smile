@@ -1931,6 +1931,7 @@ APP.map = {
    startCoordinates: { lat: 35.8, lng: -95.0 },
    allMarkers: [],
    activeMarker: null,
+   mapElement: null,
    loadStyles: async function () {
       const response = await fetch('./js/data/mapStyles.json')
       return response.json()
@@ -1942,15 +1943,12 @@ APP.map = {
    },
 
    createMap: function (styles) {
-      const mapElement = document.getElementById('map-canvas')
-      if (!mapElement) {
-         console.error('Елемент #map не знайдено на сторінці!')
+      if (!this.mapElement) {
          return
       }
-
       const zoom = window.innerWidth < 768 ? 3 : 4
 
-      this.googleMap = new google.maps.Map(mapElement, {
+      this.googleMap = new google.maps.Map(this.mapElement, {
          center: this.startCoordinates,
          zoom,
          styles,
@@ -2017,6 +2015,10 @@ APP.map = {
       const markerData = await this.loadMarkers()
       const addressesList = document.querySelector('.map__addresses--list')
 
+      if (!addressesList) {
+         return
+      }
+
       markerData.forEach((markerInfo, index) => {
          // Створюємо маркер з неактивною іконкою
          const marker = new google.maps.Marker({
@@ -2045,6 +2047,11 @@ APP.map = {
    },
 
    init: async function () {
+      this.mapElement = document.getElementById('map-canvas')
+      if (!this.mapElement) {
+         return
+      }
+
       const styles = await this.loadStyles()
       this.createMap(styles)
 
